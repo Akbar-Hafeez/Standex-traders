@@ -2,32 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .my-container {
+    @apply mx-auto   px-10 lg:px-20;
+  }
+  .heading {
+    @apply font-extrabold text-5xl ;
+  }
+  .para {
+    @apply font-medium text-lg ;
+  }
+  .button {
+    @apply font-bold text-xl rounded-md px-4 py-3 text-white hover:text-gray-700 hover:shadow-2xl  hover:shadow-orange-400;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(130, 116, 116);
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.gradient {
+  background: linear-gradient(315deg, rgb(120, 120, 134) 3%, rgb(152, 156, 162) 38%, rgb(100, 100, 104) 68%, rgb(86, 86, 80) 98%);
+}
+
+.text-gradient {
+  background: linear-gradient(315deg, rgb(240, 116, 14) 48%, rgb(213, 149, 52) 38%, rgb(231, 183, 132) 68%, rgb(240, 116, 14) 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button-gradient {
+  background: linear-gradient(315deg, rgb(220, 149, 91) 3%, rgb(219, 124, 15) 38%, rgb(231, 183, 132) 68%, rgb(240, 116, 14) 98%);
+  
 }
