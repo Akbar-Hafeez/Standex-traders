@@ -29,7 +29,7 @@ const goodsCarouselData = [
 
 
 export default function GoodsCarousel() {
-  const items = goodsCarouselData.map((item) => <Image width={800} height={800} className='cursor-pointer w-full h-[34rem]' role='presentation' src={item.image} alt='image' />)
+  const items = goodsCarouselData.map((item,index) => <Image key={index} width={800} height={800} className='cursor-pointer w-full h-[34rem]' role='presentation' src={item.image} alt='image' />)
   return (
 
     <div className=' bg-white' >

@@ -39,6 +39,7 @@ export default function BannerOne() {
                   isHovered ? 'animate__animated animate__fadeInLeft' : ''
                 }`}
                 src="/truck.png"
+                alt='truck'
                 width={270}
                 height={90}
               />

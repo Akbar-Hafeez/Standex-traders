@@ -13,7 +13,7 @@ export default function Questions() {
       <div className=''>
         <h1 className='heading text-gradient '>Still Have Questions?</h1>
         <p className='para py-6'>Check out our FAQ.</p>
-        <div className='flex justify-center lg:justify-start '><Image src="/clothone.jpg" width={494} height={200}/></div>
+        <div className='flex justify-center lg:justify-start '><Image src="/clothone.jpg" alt='clothimg' width={494} height={200}/></div>
       </div>
       <div className='two'>
       <div className='flex flex-col gap-5'>

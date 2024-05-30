@@ -21,7 +21,8 @@
     "react-alice-carousel": "^2.9.1",
     "react-dom": "^18",
     "react-hook-form": "^7.51.1",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "eslint": "^8",

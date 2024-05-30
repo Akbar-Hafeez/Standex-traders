@@ -29,7 +29,7 @@ const shoesCarouselData = [
 
 
 export default function ShoesCarousel() {
-  const items = shoesCarouselData.map((item) => <Image width={800} height={800} className='cursor-pointer w-full h-[34rem]' role='presentation' src={item.image} alt='image' />)
+  const items = shoesCarouselData.map((item,index) => <Image key={index} width={800} height={800} className='cursor-pointer w-full h-[34rem]' role='presentation' src={item.image} alt='image' />)
   return (
 
     <div className=' bg-white' >
