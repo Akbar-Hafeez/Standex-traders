@@ -5,7 +5,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Error from "../../public/assets/error.svg";
 import toast, { Toaster } from "react-hot-toast";
-import SideBg from "../../public/shoes.jpeg";
+import SideBg from "../../public/Shoes1.jpg";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
