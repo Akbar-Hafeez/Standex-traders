@@ -3,7 +3,7 @@ import MainCarousel from '../components/carousel/MainCarousel'
 import AboutUs from '../components/about/AboutUs'
 import BannerTwo from '../components/homePage/BannerTwo'
 export const metadata = {
-  title: "About",
+  title: "Standex traders | About",
   description: "This is About page of standex traders",
 };
 export default function page() {

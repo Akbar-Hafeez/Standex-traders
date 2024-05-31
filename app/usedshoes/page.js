@@ -3,7 +3,7 @@ import ShoesCarousel from "../components/shoesCarousel/ShoesCarousel";
 import Image from "next/image";
 import BannerTwo from "../components/homePage/BannerTwo";
 export const metadata = {
-  title: "Used Shoes",
+  title: "Standex traders | Used Shoes",
   description: "This is Used Shoes page of standex traders",
 };
 export default function page() {

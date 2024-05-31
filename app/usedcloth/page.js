@@ -3,7 +3,7 @@ import BannerTwo from "../components/homePage/BannerTwo";
 import ClothCarousel from "../components/clothCarousel/ClothCarousel";
 import Image from "next/image";
 export const metadata = {
-  title: "Used Clothes",
+  title: "Standex traders | Used Clothes",
   description: "This is Used Clothes page of standex traders",
 };
 export default function page() {

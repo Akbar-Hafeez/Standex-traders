@@ -10,10 +10,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
 
-export const metadata = {
-  title: "Register",
-  description: "This is Register page of standex traders",
-};
+
 function Register() {
   const { checkAuthStatus } = useContext(AuthContext);
 

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "Standex traders | Home",
+  title: "Standex traders ",
   description: "This is home page of standex traders",
 };
 
