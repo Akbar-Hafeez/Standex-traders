@@ -34,12 +34,15 @@ export default function ShoesCarousel() {
 
     <div className=' bg-white' >
       <AliceCarousel
+        autoPlay
+        autoPlayStrategy="none"
+        autoPlayInterval={1000}
+        animationDuration={1000}
+        animationType="fadeout"
+        infinite
+        touchTracking={false}
         items={items}
         disableButtonsControls
-        autoPlay
-        autoPlayInterval={2000}
-        infinite
-
       />
     </div>
   )

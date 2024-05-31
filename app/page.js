@@ -6,11 +6,13 @@ import BannerOne from "./components/homePage/BannerOne";
 
 import FormOne from "./components/homePage/FormOne";
 import BannerTwo from "./components/homePage/BannerTwo";
+import CookieModal from "./components/modal/CookieModal";
 
 
 export default function Home() {
   return (
     <>
+    <CookieModal/>
    <MainCarousel/>
   <Welcome/>
   <WhatWeBuy/>

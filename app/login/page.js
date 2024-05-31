@@ -3,12 +3,13 @@ import Image from "next/image";
 import axios from "axios";
 import React, { useState, useContext, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Error from "../../public/assets/error.svg";
+
 import toast, { Toaster } from "react-hot-toast";
 import SideBg from "../../public/Shoes1.jpg";
-import Link from "next/link";
+
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
+import CookieModal from "../components/modal/CookieModal";
 
 
 
@@ -67,6 +68,7 @@ const {
 
   return (
     <>
+    <CookieModal/>
       <div className="grid items-center grid-cols-1 gap-4 mx-auto my-10 lg:grid-cols-2 lg:gap-8 lg:mx-28 ">
         <Toaster />
         {/* Image-Section */}

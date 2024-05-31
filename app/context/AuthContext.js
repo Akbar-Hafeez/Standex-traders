@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
+     
       const response = await axios.get('https://standex-traders.onrender.com/api/v1/verify-token', { withCredentials: true });
       if (response.status === 200 && response.data.success) {
         setIsAuthenticated(true);

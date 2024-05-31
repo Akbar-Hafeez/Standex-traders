@@ -30,21 +30,21 @@ export default function Register() {
     }
   };
   return (
-    <div className="flex items-center sm:flex sm:gap-4">
+    <div className="flex items-center gap-2 md:gap-4 lg:gap-6">
         <Toaster/>
-      {isAuthenticated ? (
+     {isAuthenticated ? (
         <button onClick={handleLogout} className="button button-gradient  px-5 py-2.5 text-sm font-medium text-white shadow">
           Logout
         </button>
       ) : (
         <Link
           href={"/login"}
-          className="button button-gradient  px-5 py-2.5 text-sm font-medium text-white shadow"
+          className="button button-gradient  px-7 py-2.5 text-sm font-medium text-white shadow"
         >
           LogIn
         </Link>
       )}
-      <div className="hidden sm:flex">
+      <div className=" ">
         <Link href={"/register"}>
           <button
             disabled={isAuthenticated}
@@ -53,7 +53,7 @@ export default function Register() {
             {isAuthenticated ? "Registered" : "Register"}
           </button>
         </Link>
-      </div>
+        </div>
     </div>
   );
 }

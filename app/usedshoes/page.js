@@ -104,10 +104,11 @@ export default function page() {
             further conduct business.
           </p>
           <div className="grid  lg:grid-cols-2  gap-16 py-8  ">
-            <div className="sm:flex  sm:justify-center">
+            <div className="flex flex-col  justify-center items-center">
               {" "}
-              <div className="md:mx-auto border-2  w-[440px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
+                
                   src="/Shoes1.jpg"
                   layout="fill"
                   objectFit="cover"
@@ -115,9 +116,9 @@ export default function page() {
                 />
               </div>
             </div>
-            <div className="sm:flex  sm:justify-center">
+            <div className="flex flex-col  justify-center items-center">
               {" "}
-              <div className="md:mx-auto border-2  w-[440px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
                   src="/Shoes.jpg"
                   layout="fill"
@@ -126,9 +127,9 @@ export default function page() {
                 />
               </div>
             </div>
-            <div className="sm:flex  sm:justify-center">
+            <div className="flex flex-col  justify-center items-center">
               {" "}
-              <div className="md:mx-auto border-2  w-[440px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
                   src="/Shoes3.jpg"
                   layout="fill"
@@ -137,9 +138,9 @@ export default function page() {
                 />
               </div>
             </div>
-            <div className="sm:flex  sm:justify-center">
+            <div className="flex flex-col  justify-center items-center">
               {" "}
-              <div className="md:mx-auto border-2  w-[440px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
                   src="/Shoes4.jpg"
                   layout="fill"

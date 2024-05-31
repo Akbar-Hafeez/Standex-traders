@@ -34,11 +34,15 @@ export default function ClothCarousel() {
 
     <div className=' bg-white' >
       <AliceCarousel
-        items={items}
-        disableButtonsControls
-        autoPlay
-        autoPlayInterval={2000}
-        infinite
+       autoPlay
+       autoPlayStrategy="none"
+       autoPlayInterval={1000}
+       animationDuration={1000}
+       animationType="fadeout"
+       infinite
+       touchTracking={false}
+       items={items}
+       disableButtonsControls
 
       />
     </div>

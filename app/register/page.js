@@ -9,6 +9,7 @@ import SideBg from "../../public/clothone.jpg";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
+import CookieModal from "../components/modal/CookieModal";
 
 
 function Register() {
@@ -62,6 +63,7 @@ function Register() {
 
   return (
     <>
+    <CookieModal/>
       <div className="grid items-center grid-cols-1 gap-4 mx-auto my-10 lg:grid-cols-2 lg:gap-8 lg:mx-28 ">
         <Toaster />
         {/* Image-Section */}
