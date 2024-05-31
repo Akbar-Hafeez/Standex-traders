@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../../../public/assets/Logo/logo.jpg";
+import Logo from "../../../public/logo.jpg";
 import Mail from "../../../public/mail.png";
 import Phone from "../../../public/phone.png";
 import location from "../../../public/location.png"

@@ -66,6 +66,7 @@ export default function BannerOne() {
                 <span>Get In Touch</span>
                 <span>
                   <Image
+                  unoptimized
                     src="/arrow.gif"
                     className=""
                     width={30}

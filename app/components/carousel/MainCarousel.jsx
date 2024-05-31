@@ -8,7 +8,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const mainCarouselData = [
   {
-    image:  '/shoes.jpeg',
+    image:  '/Shoes.jpeg' ,
   },
   {
     image: '/cloththree.jpeg',
@@ -20,7 +20,7 @@ const mainCarouselData = [
     image: '/clothtwo.jpg',
   },
   {
-    image: '/shoes1.jpg',
+    image: '/Shoes1.jpg',
   },
   {
     image: '/usedthree.jpg',

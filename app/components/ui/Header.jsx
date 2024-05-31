@@ -12,8 +12,8 @@ import {
 } from "@mui/joy";
 import Navbar from "./Navbar";
 import Image from "next/image";
-import Logo from "../../../public/assets/Logo/logo.jpg";
-import DrawerLogo from "../../../public/assets/Logo/logo.jpg";
+import Logo from "../../../public/logo.jpg";
+import DrawerLogo from "../../../public/logo.jpg";
 import Mail from "../../../public/mail.png";
 import Phone from "../../../public/phone.png";
 import location from "../../../public/location.png"
@@ -160,9 +160,10 @@ function Header() {
                                   We Buy <ArrowDropDown />
                                 </summary>
 
-                                {dropsLink.map((drop) => (
+                                {dropsLink.map((drop,ind) => (
                                   <>
                                     <Link
+                                    key={ind}
                                       href={drop.href}
                                       className="block px-6 my-2 text-black hover:text-blue-500"
                                     >
@@ -173,9 +174,10 @@ function Header() {
                               </details>
                             </li>
 
-                            {navLinks.map((links) => (
+                            {navLinks.map((links,index) => (
                               <>
                                 <Link
+                                key={index}
                                   href={links.href}
                                   className="block hover:text-blue-500"
                                 >

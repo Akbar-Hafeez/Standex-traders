@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div className='my-container py-12'>
         <div className='flex flex-col justify-center items-center pb-8'>
-     <Image width={30} height={30} src="/star.png" alt="nn" srcset="" />
+     <Image width={30} height={30} src="/star.png" alt="nn" srcSet="" />
     <h1 className=" heading text-gradient pt-2 animate__animated animate__slideInDown">ABOUT US</h1>
  </div>
  <p className='para pb-5'>

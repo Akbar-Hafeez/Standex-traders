@@ -18,7 +18,7 @@ export default function WhatWeBuy() {
       onFocus={handleHover}
     >
       <div className='flex flex-col justify-center items-center'>
-        <Image width={30} height={30} src="/star.png" alt="nn" />
+        <Image  width={30} height={10} src="/star.png" alt="nn" />
         <h1
           className={`heading text-gradient pt-2 ${
             isHovered ? 'animate__animated animate__slideInDown' : ''

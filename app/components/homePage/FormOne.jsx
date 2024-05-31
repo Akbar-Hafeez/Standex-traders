@@ -69,25 +69,25 @@ export default function FormOne() {
   };
 
   return (
-    <div class="max-w-6xl mx-auto bg-white my-6 font-[sans-serif] text-[#011c2b] py-10">
-      <div class="text-center px-6">
-        <h2 class="heading text-gradient">Contact Us</h2>
-        <p class="para pt-4">
+    <div className="max-w-6xl mx-auto bg-white my-6 font-[sans-serif] text-[#011c2b] py-10">
+      <div className="text-center px-6">
+        <h2 className="heading text-gradient">Contact Us</h2>
+        <p className="para pt-4">
           Want to Buy or Sell used items with Standex Traders?
         </p>
       </div>
-      <div class="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-8">
-        <div class="gradient rounded-lg p-6 max-lg:text-center">
-          <h2 class="text-3xl heading text-gradient">
+      <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-8">
+        <div className="gradient rounded-lg p-6 max-lg:text-center">
+          <h2 className="text-3xl heading text-gradient">
             Don’t Hesitate To Contact Us
           </h2>
-          <p class=" text-white text-md font-medium mt-10">
+          <p className=" text-white text-md font-medium mt-10">
             Get in touch with us to explore mutually beneficial collaborations
             and experience the reliability and quality that define Standex
             Traders.
           </p>
-          <ul class="mt-8 space-y-6">
-            <li class="flex items-center max-lg:justify-center">
+          <ul className="mt-8 space-y-6">
+            <li className="flex items-center max-lg:justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16px"
@@ -100,11 +100,11 @@ export default function FormOne() {
                   data-original="#000000"
                 />
               </svg>
-              <a href="javascript:void(0)" class="text-white text-sm ml-3">
+              <a href="" className="text-white text-sm ml-3">
                 <strong>standextraders@gmail.com</strong>
               </a>
             </li>
-            <li class="flex items-center max-lg:justify-center">
+            <li className="flex items-center max-lg:justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16px"
@@ -117,11 +117,11 @@ export default function FormOne() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <a href="javascript:void(0)" class="text-white text-sm ml-3">
+              <a href="" className="text-white text-sm ml-3">
                 <strong>+267 412 8822</strong>
               </a>
             </li>
-            <li class="flex items-center max-lg:justify-center">
+            <li className="flex items-center max-lg:justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16px"
@@ -138,7 +138,7 @@ export default function FormOne() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <a href="javascript:void(0)" class="text-white text-sm ml-3">
+              <a href="" className="text-white text-sm ml-3">
                 <strong>
                   2303 Park Avenue W Hainesport,
                   <p>New Jersey 08036</p>
@@ -146,9 +146,9 @@ export default function FormOne() {
               </a>
             </li>
           </ul>
-          <ul class="flex max-lg:justify-center mt-16 space-x-4">
-            <li class="button-gradient hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="javascript:void(0)">
+          <ul className="flex max-lg:justify-center mt-16 space-x-4">
+            <li className="button-gradient hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <a href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18px"
@@ -163,8 +163,8 @@ export default function FormOne() {
                 </svg>
               </a>
             </li>
-            <li class="button-gradient hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="javascript:void(0)">
+            <li className="button-gradient hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <a href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18px"
@@ -179,8 +179,8 @@ export default function FormOne() {
                 </svg>
               </a>
             </li>
-            <li class="button-gradient  hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="javascript:void(0)">
+            <li className="button-gradient  hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <a href="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18px"
@@ -194,11 +194,11 @@ export default function FormOne() {
             </li>
           </ul>
         </div>
-        <div class="p-6 rounded-xl lg:col-span-2">
+        <div className="p-6 rounded-xl lg:col-span-2">
           <form onSubmit={handleSubmit(onSubmit)} onChange={handleChange}>
-            <div class="grid sm:grid-cols-2 gap-8">
+            <div className="grid sm:grid-cols-2 gap-8">
               <div>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     value={input.name}
                     onChange={handleChange}
@@ -221,14 +221,14 @@ export default function FormOne() {
                         message: "max length should be 20",
                       },
                     })}
-                    class=" px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
+                    className=" px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
                   />
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 24 24"
                   >
                     <circle
@@ -248,7 +248,7 @@ export default function FormOne() {
                 )}
               </div>
               <div>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="text"
                     value={input.companyName}
@@ -269,14 +269,14 @@ export default function FormOne() {
                       },
                     })}
                     placeholder="Company Name"
-                    class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
+                    className="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
                   />
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 24 24"
                   >
                     <circle
@@ -298,7 +298,7 @@ export default function FormOne() {
                 )}
               </div>
               <div>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="number"
                     value={input.phoneNumber}
@@ -320,12 +320,12 @@ export default function FormOne() {
                       },
                     })}
                     placeholder="Phone Number"
-                    class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
+                    className="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
                   />
 
                   <svg
                     fill="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 64 64"
                   >
                     <path
@@ -341,7 +341,7 @@ export default function FormOne() {
                 )}
               </div>
               <div>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="email"
                     value={input.email}
@@ -356,14 +356,14 @@ export default function FormOne() {
                       },
                     })}
                     placeholder="Email"
-                    class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
+                    className="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
                   />
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -375,13 +375,13 @@ export default function FormOne() {
                       </clipPath>
                     </defs>
                     <g
-                      clip-path="url(#a)"
+                      clipPath="url(#a)"
                       transform="matrix(1.33 0 0 -1.33 0 682.667)"
                     >
                       <path
                         fill="none"
-                        stroke-miterlimit="10"
-                        stroke-width="40"
+                        strokeMiterlimit="10"
+                        strokeWidth="40"
                         d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z"
                         data-original="#000000"
                       ></path>
@@ -397,7 +397,7 @@ export default function FormOne() {
                 )}
               </div>
               <div className="sm:col-span-2">
-                <div class="relative flex items-center ">
+                <div className="relative flex items-center ">
                   <textarea
                     onChange={handleChange}
                     placeholder="Write Message"
@@ -419,14 +419,14 @@ export default function FormOne() {
                         message: "max length should be 300 alphabets",
                       },
                     })}
-                    class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
+                    className="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#011c2b] outline-none"
                   ></textarea>
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#bbb"
                     stroke="#bbb"
-                    class="w-[18px] h-[18px] absolute right-2"
+                    className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
                     <defs>
@@ -438,13 +438,13 @@ export default function FormOne() {
                       </clipPath>
                     </defs>
                     <g
-                      clip-path="url(#a)"
+                      clipPath="url(#a)"
                       transform="matrix(1.33 0 0 -1.33 0 682.667)"
                     >
                       <path
                         fill="none"
-                        stroke-miterlimit="10"
-                        stroke-width="40"
+                        strokeMiterlimit="10"
+                        strokeWidth="40"
                         d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z"
                         data-original="#000000"
                       ></path>
@@ -459,7 +459,7 @@ export default function FormOne() {
                   <div className="para px-3 pt-1">{errors.message.message}</div>
                 )}
               </div>
-              <div class="col-span-full">
+              <div className="col-span-full">
 
                 {/* <FormControl  {...register("subject", {
                       required: {
@@ -666,20 +666,20 @@ export default function FormOne() {
             <button
               type="submit"
               value="submit"
-              class="button button-gradient mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded px-4 py-2.5 "
+              className="button button-gradient mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded px-4 py-2.5 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16px"
                 height="16px"
                 fill="#fff"
-                class="mr-2"
+                className="mr-2"
                 viewBox="0 0 548.244 548.244"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                   data-original="#000000"
                 />
               </svg>

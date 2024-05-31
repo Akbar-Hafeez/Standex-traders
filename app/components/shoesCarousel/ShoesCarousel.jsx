@@ -8,19 +8,19 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const shoesCarouselData = [
   {
-    image:  '/shoes.jpeg',
+    image:  '/Shoes.jpeg',
   },
   {
-    image: '/shoes.jpg',
+    image: '/Shoes.jpg',
   },
   {
-    image: '/shoes1.jpg',
+    image: '/Shoes1.jpg',
   },
   {
-    image: '/shoes3.jpg',
+    image: '/Shoes3.jpg',
   },
   {
-    image: '/shoes4.jpg',
+    image: '/Shoes4.jpg',
   },
  
 

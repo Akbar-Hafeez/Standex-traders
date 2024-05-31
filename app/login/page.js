@@ -10,7 +10,10 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
 
-
+export const metadata = {
+  title: "Login",
+  description: "This is Login page of standex traders",
+};
 
 function Login() {
     

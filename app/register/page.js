@@ -10,23 +10,22 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
 
-
-
+export const metadata = {
+  title: "Register",
+  description: "This is Register page of standex traders",
+};
 function Register() {
-    
-  
-  const {checkAuthStatus } = useContext(AuthContext);
+  const { checkAuthStatus } = useContext(AuthContext);
 
   const [input, setInput] = useState({ name: "", email: "", password: "" });
   const router = useRouter();
 
-
-const {
+  const {
     register,
     handleSubmit,
     // setError,
-     formState: { errors,isSubmitting },
-  } = useForm()
+    formState: { errors, isSubmitting },
+  } = useForm();
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
@@ -41,26 +40,25 @@ const {
         { withCredentials: true }
       );
 
-      console.log("this is my register response",response.data)
+      console.log("this is my register response", response.data);
       if (!response.data.success) {
         toast.error(response.data);
         console.log("User registration error:", response.data);
         return;
       }
 
-    
-
       toast.success("Registration successful!");
-      checkAuthStatus()
+      checkAuthStatus();
       setInput({ name: "", email: "", password: "" });
-      
-      setTimeout(() => {
-        router.push('/contact');
-      }, 2000);
-      
 
+      setTimeout(() => {
+        router.push("/contact");
+      }, 2000);
     } catch (error) {
-      console.error("Error in registering the user:", error.response.data.message);
+      console.error(
+        "Error in registering the user:",
+        error.response.data.message
+      );
       toast.error(error.response.data.message);
     }
   };
@@ -79,13 +77,17 @@ const {
         <div className="mx-auto">
           <form
             className="w-full p-8 bg-white border border-gray-500 rounded-lg shadow-lg py-7 md:w-96 lg:w-96"
-            onSubmit={handleSubmit(onSubmit)} onChange={handleChange}
+            onSubmit={handleSubmit(onSubmit)}
+            onChange={handleChange}
           >
             <h1 className="flex items-center justify-center font-sans text-2xl font-bold text-gradient">
-             REGISTRATION
+              REGISTRATION
             </h1>
             <div className="mt-4 mb-4">
-              <label className="block pb-1 mx-2 text-sm text-gray-500" htmlFor="name">
+              <label
+                className="block pb-1 mx-2 text-sm text-gray-500"
+                htmlFor="name"
+              >
                 Name
               </label>
               <input
@@ -97,12 +99,23 @@ const {
                 type="text"
                 id="name"
                 name="name"
-                {...register("name", { required:{value:true,message:"this field is required" },minLength:{value:4,message:"min length should be 4"} ,maxLength:{value:20,message:"max length should be 20"}})}
+                {...register("name", {
+                  required: { value: true, message: "this field is required" },
+                  minLength: { value: 4, message: "min length should be 4" },
+                  maxLength: { value: 20, message: "max length should be 20" },
+                })}
               />
-              {errors.name&& <div className='text-md font-medium px-3 pt-1'>{errors.name.message}</div>}
+              {errors.name && (
+                <div className="text-md font-medium px-3 pt-1">
+                  {errors.name.message}
+                </div>
+              )}
             </div>
             <div className="mt-4 mb-4">
-              <label className="block pb-1 mx-2 text-sm text-gray-500" htmlFor="email">
+              <label
+                className="block pb-1 mx-2 text-sm text-gray-500"
+                htmlFor="email"
+              >
                 E-mail
               </label>
               <input
@@ -114,18 +127,25 @@ const {
                 type="email"
                 id="email"
                 name="email"
-                {...register('email', {
-                    required: 'Email is required',
-                    pattern: {
-                      value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                      message: 'Invalid email address'
-                    }
-                  })}
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                    message: "Invalid email address",
+                  },
+                })}
               />
-               {errors.email&& <div className='text-md font-medium px-3 pt-1'>{errors.email.message}</div>}
+              {errors.email && (
+                <div className="text-md font-medium px-3 pt-1">
+                  {errors.email.message}
+                </div>
+              )}
             </div>
             <div>
-              <label className="block pb-1 mx-2 mt-2 text-sm text-gray-500" htmlFor="password">
+              <label
+                className="block pb-1 mx-2 mt-2 text-sm text-gray-500"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
@@ -137,19 +157,28 @@ const {
                 type="password"
                 id="password"
                 name="password"
-                {...register("password", { required:{value:true,message:"this field is required" },minLength:{value:4,message:"min length should be 4"} ,maxLength:{value:15,message:"max length should be 15"}})}
+                {...register("password", {
+                  required: { value: true, message: "this field is required" },
+                  minLength: { value: 4, message: "min length should be 4" },
+                  maxLength: { value: 15, message: "max length should be 15" },
+                })}
               />
-               {errors.password&& <div className='text-md font-medium px-3 pt-1'>{errors.password.message}</div>}
+              {errors.password && (
+                <div className="text-md font-medium px-3 pt-1">
+                  {errors.password.message}
+                </div>
+              )}
             </div>
-           
+
             <button
-              type="submit" disabled={isSubmitting}
+              type="submit"
+              disabled={isSubmitting}
               className="button-gradient  w-full p-2 mt-3 text-white  rounded-md hover:text-gray-700 hover:shadow-2xl  hover:shadow-orange-400 "
             >
-            {isSubmitting ? "Registering..." : "Register"}
+              {isSubmitting ? "Registering..." : "Register"}
             </button>
-            {errors.specificerror&&<div>{errors.specificerror.message}</div>}
-            
+            {errors.specificerror && <div>{errors.specificerror.message}</div>}
+
             <div className="flex items-center justify-between mt-4">
               <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
               <Link
