@@ -37,7 +37,7 @@ const CookieModal = () => {
                 <h3 className="text-lg leading-6 font-medium text-gradient">Welcome to Our Website</h3>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">We use third-party cookies to enhance your browsing experience and to enable certain features, such as sending messages ,keep you log in. By accepting all cookies, you agree to our use of cookies as described in our <a href="/privacy" className="text-gradient">Privacy Policy</a>.</p>
-                  <p className="text-sm text-gray-500">To enjoy full functionality of our website, please enable third-party cookies in your browser settings <a href="/enabling-cookies-tutorial>" className="text-gradient">See Setting Tutorials</a>.</p>
+                  <p className="text-sm text-gray-500">To enjoy full functionality of our website, please enable third-party cookies in your browser settings <a href="/enabling-cookies-tutorial" className="text-gradient">See Setting Tutorials</a>.</p>
                 </div>
               </div>
             </div>
