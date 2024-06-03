@@ -65,10 +65,25 @@ const {
       toast.error(error.response.data.message);
     }
   };
+  const [showCookieModal, setShowCookieModal] = useState(false);
 
+  useEffect(() => {
+    const modalTimeout = setTimeout(() => {
+      setShowCookieModal(true);
+      const hideModalTimeout = setTimeout(() => {
+        setShowCookieModal(false);
+      }, 9000); // Hide modal after 5 seconds
+      return () => clearTimeout(hideModalTimeout);
+    }, 3000); // Show modal after 10 seconds
+
+    return () => clearTimeout(modalTimeout);
+  }, []);
   return (
     <>
-    <CookieModal/>
+    <div>
+
+   {showCookieModal && <CookieModal/>}
+    </div>
       <div className="grid items-center grid-cols-1 gap-4 mx-auto my-10 lg:grid-cols-2 lg:gap-8 lg:mx-28 ">
         <Toaster />
         {/* Image-Section */}

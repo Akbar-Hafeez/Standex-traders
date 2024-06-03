@@ -11,7 +11,7 @@ export default function page() {
     <>
       <div className="">
         <h1 className="heading text-gradient py-8 px-8">
-          Used Purses | Wholesale Used Toys
+          Used Bags | Wholesale Used Toys
         </h1>
         <GoodsCarousel />
         <div className="my-container">
@@ -76,6 +76,83 @@ export default function page() {
               {" "}
               <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
+                  src="/bag4.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag1.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag2.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag3.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag5.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag6.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
+                  src="/bag7.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="shoesImg"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col  justify-center items-center">
+              {" "}
+              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
+                <Image
                   src="/usedthree.jpg"
                   layout="fill"
                   objectFit="cover"
@@ -88,17 +165,6 @@ export default function page() {
               <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
                 <Image
                   src="/usedtwo.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="shoesImg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col  justify-center items-center">
-              {" "}
-              <div className="md:mx-auto border-2  w-[300px] md:w-[500px] h-[360px] border-gray-400 shadow-2xl shadow-orange-500 relative">
-                <Image
-                  src="/usedfour.jpg"
                   layout="fill"
                   objectFit="cover"
                   alt="shoesImg"

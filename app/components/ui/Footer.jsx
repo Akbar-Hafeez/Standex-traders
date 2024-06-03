@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -74,7 +75,13 @@ export default function Footer() {
             </svg></a></li>
         </ul>
 
-        <p className="text-base">&copy; 2024<a href='https://readymadeui.com/' target='_blank'
+        <p className="text-base pb-5 "><Link href='/privacy' className='underline'>Privacy Policy</Link>
+        
+        </p>
+        <p className="text-base pb-5 ">
+        <Link href='/enabling-cookies-tutorial' className='underline'>Enabling Cookies Tutorial</Link>
+        </p>
+        <p className="text-base">&copy; 2024<a href='https://standextraders.com/' target=''
           className="hover:underline mx-2">StandexTraders</a>All Rights Reserved.</p>
       </div>
     </footer>

@@ -2,6 +2,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BannerOne() {
   const [isHovered, setIsHovered] = useState(false);
@@ -63,7 +64,7 @@ export default function BannerOne() {
               }`}
             >
               <button className="button button-gradient flex items-center justify-center gap-2">
-                <span>Get In Touch</span>
+               <Link href='/contact'> <span>Get In Touch</span></Link>
                 <span>
                   <Image
                   unoptimized

@@ -2,9 +2,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
+import Head from "next/head";
 
 import 'animate.css';
 import { AuthProvider } from "./context/AuthContext";
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -15,8 +17,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
-    <link rel="icon" href="/logo.jpg"  sizes="any" />
+    
+    
+   <html lang="en" >
+
       <AuthProvider>
       <body className={inter.className}>
 <Header/>
@@ -25,5 +29,6 @@ export default function RootLayout({ children }) {
         </body>
         </AuthProvider>
     </html>
+    
   );
 }

@@ -53,7 +53,7 @@ export default function FormOne() {
       }
 
       toast.success("Message Sent successfully !!");
-      // checkAuthStatus()
+      
       setInput({
         name: "",
         companyName: "",

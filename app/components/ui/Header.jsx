@@ -137,18 +137,19 @@ function Header() {
                       <ModalClose />
                       <div className="flex flex-col justify-between h-screen bg-white border-e">
                         <div className="">
-                          <Image
+                          <Link href='/'open={open} onClick={() => setOpen(false)} ><Image
                             src={DrawerLogo}
                             alt="Logo"
                             width={100}
                             className="mx-5"
-                          />
+                          /></Link>
 
                           <ul className="px-6 mt-6 space-y-4 font-sans font-semibold text-black text-md">
                             <li>
                               <Link
                                 href={"/"}
                                 className="block hover:text-blue-500"
+                                open={open} onClick={() => setOpen(false)}
                               >
                                 Home
                               </Link>
@@ -166,6 +167,7 @@ function Header() {
                                     key={ind}
                                       href={drop.href}
                                       className="block px-6 my-2 text-black hover:text-blue-500"
+                                      open={open} onClick={() => setOpen(false)}
                                     >
                                       {drop.label}
                                     </Link>
@@ -180,6 +182,7 @@ function Header() {
                                 key={index}
                                   href={links.href}
                                   className="block hover:text-blue-500"
+                                  open={open} onClick={() => setOpen(false)}
                                 >
                                   {links.label}
                                 </Link>

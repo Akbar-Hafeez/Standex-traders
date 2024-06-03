@@ -7,6 +7,12 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const mainCarouselData = [
   {
+    image: "/bag5.jpeg",
+  },
+  {
+    image: "/bag3.jpeg",
+  },
+  {
     image: "/Shoes.jpeg",
   },
   {
